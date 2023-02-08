@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "ES6",
+        "watch": true,
+        "outDir": "../user_scripts",
+        "typeRoots": ["../node_modules/node-hill-types"],
+        "module": "CommonJS"
+    }
+}
