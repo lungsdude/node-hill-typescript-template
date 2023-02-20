@@ -19,6 +19,13 @@ Follow the Setup guide right below
   10. The project is all yours now! You can now launch the server and client and test out the TypeScript!
 
 ## Additional Info
+### Importnant
+  1. Edit game code ONLY in `./user_scripts.ts/`, the `./user_scripts/` will be automatically compiled (as long as `typescript_compiler.bat` is running)
+  2. Always have `typescript_compiler.bat` opened for code compilation, also remember that code is being compiled only when the file with code is saved
+  3. If you run into a problem when code that would compile in JavaScript, but for some reason doesn't, you can use `//@ts-expect-error` above the error.
+     Not the best solution, but a quick fix.
+  4. You can use Enums! `GameEvents.InitialSpawn` as an example.
+  5. If you find an issue with the npm module, message me on discord.
 ### Visual Stuido Code Setup
 I really recommend to use [Visual Studio Code](https://code.visualstudio.com/), since it has a built it IntelliSense for TypeScript.
 So continuing from where we left of:
