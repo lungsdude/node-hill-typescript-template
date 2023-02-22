@@ -8,8 +8,8 @@ Follow the Setup guide right below
   2. Download THIS template by pressing green `Code` button and downloading ZIP file.
   3. Open the extracted folder in the file explorer, and in the top bar type "cmd" and press enter.
   4. Download TypeScript at https://www.typescriptlang.org/download
-  5. Run npm i node-hill@latest, as this will install the needed dependencies for node-hill to function.
-  6. Run npm i node-hill-types@latest, as this will install the node-hill type definitions for TypeScript to function.
+  5. Run `npm i node-hill@latest`, as this will install the needed dependencies for node-hill to function.
+  6. Run `npm i node-hill-types@latest`, as this will install the node-hill type definitions for TypeScript to function.
   7. Edit the start.js file to fill in your appropriate server information.
      You will need to add your host key for the set you want to host. This can be found under the set's settings page.
   8. Edit your game code in `./user_scripts.ts/` folder.
@@ -20,12 +20,13 @@ Follow the Setup guide right below
 
 ## Additional Info
 ### Importnant
-  1. Edit game code ONLY in `./user_scripts.ts/`, the `./user_scripts/` will be automatically compiled (as long as `typescript_compiler.bat` is running)
-  2. Always have `typescript_compiler.bat` opened for code compilation, also remember that code is being compiled only when the file with code is saved
-  3. If you run into a problem when code that would compile in JavaScript, but for some reason doesn't, you can use `//@ts-expect-error` above the error.
+  1. At least 1 TypeScript file should contain `import {} from "node-hill-types"` 
+  2. Edit game code ONLY in `./user_scripts.ts/`, the `./user_scripts/` will be automatically compiled (as long as `typescript_compiler.bat` is running)
+  3. Always have `typescript_compiler.bat` opened for code compilation, also remember that code is being compiled only when the file with code is saved
+  4. If you run into a problem when code that would compile in JavaScript, but for some reason doesn't, you can use `//@ts-expect-error` above the error.
      Not the best solution, but a quick fix.
-  4. You can use Enums! `GameEvents.InitialSpawn` as an example.
-  5. If you find an issue with the npm module, message me on discord.
+  5. You can use Enums! `GameEvents.InitialSpawn` as an example.
+  6. If you find an issue with the npm module, message me on discord.
 ### Visual Stuido Code Setup
 I really recommend to use [Visual Studio Code](https://code.visualstudio.com/), since it has a built it IntelliSense for TypeScript.
 So continuing from where we left of:
